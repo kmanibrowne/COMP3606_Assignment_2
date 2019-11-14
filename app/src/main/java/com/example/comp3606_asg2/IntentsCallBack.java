@@ -25,7 +25,7 @@ public class IntentsCallBack extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         callBackBtn = findViewById(R.id.button_callBack);
-        int num = 500;
+        int num = 620;
         String returnVal = "CallBack returned value "+Integer.toString(num);
         Intent returnIntent = new Intent();
         returnIntent.putExtra("result",returnVal);
