@@ -64,4 +64,5 @@
     <string name="question5"> <!--DatePicker-->
         5. __________ provides a widget for selecting a date.
     </string>
+    <string name="title_activity_intents_call_back">IntentsCallBack</string>
 </resources>

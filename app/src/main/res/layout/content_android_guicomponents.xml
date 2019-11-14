@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,124 +8,127 @@
     tools:context=".AndroidGUIComponents"
     tools:showIn="@layout/activity_android_guicomponents">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="0dp"
-        android:text="Toast "
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:text="Toast "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="2dp"
-        android:text="@string/Toast_faqs"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/Toast_faqs"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="120dp"
-        android:text="Spinner "
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="120dp"
+            android:text="Spinner "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="160dp"
-        android:layout_marginLeft="2dp"
-        android:text="@string/Spinner_faqs"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/Spinner_faqs"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="240dp"
-        android:text="Button "
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="240dp"
+            android:text="Button "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="280dp"
-        android:layout_marginLeft="2dp"
-        android:text="@string/Button_faqs"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/Button_faqs"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="325dp"
-        android:text="ImageView "
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="325dp"
+            android:text="ImageView "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="370dp"
-        android:layout_marginLeft="2dp"
-        android:text="@string/ImageView_faqs"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="370dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/ImageView_faqs"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="445dp"
-        android:text="ListView "
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="445dp"
+            android:text="ListView "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="485dp"
-        android:layout_marginLeft="2dp"
-        android:text="@string/ListView_faqs"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="485dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/ListView_faqs"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="560dp"
-        android:text="EditText "
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="560dp"
+            android:text="EditText "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="600dp"
-        android:layout_marginLeft="2dp"
-        android:text="@string/EditText_faqs"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="600dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/EditText_faqs"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="620dp"
-        android:text="DatePicker "
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="620dp"
+            android:text="DatePicker "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="655dp"
-        android:layout_marginLeft="2dp"
-        android:text="@string/DatePicker_faqs"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="655dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/DatePicker_faqs"/>
 
-    <!--<TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="680dp"
-        android:text="NumberPicker "
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="680dp"
+            android:text="NumberPicker "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="690dp"
-        android:layout_marginLeft="2dp"
-        android:text="@string/NumberPicker_faqs"/>-->
-
-</RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="720dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/NumberPicker_faqs"/>
+    </RelativeLayout>
+</ScrollView>

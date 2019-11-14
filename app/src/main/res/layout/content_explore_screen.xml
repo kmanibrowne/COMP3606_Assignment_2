@@ -75,8 +75,9 @@
         android:id="@+id/intent_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
         android:layout_marginLeft="130dp"
+        android:layout_marginTop="400dp"
+        android:onClick="onClickIntentCallBack"
         android:text="Intents CallBack" />
 
     <ImageButton

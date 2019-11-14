@@ -1,5 +1,6 @@
 package com.example.comp3606_asg2;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Toast;
 
 public class ExploreScreen extends AppCompatActivity {
 
@@ -36,5 +38,23 @@ public class ExploreScreen extends AppCompatActivity {
     public void onClickStartQuiz(View view){
         Intent i = new Intent(ExploreScreen.this, QuizScreen.class);
         startActivity(i);
+    }
+
+    public void onClickIntentCallBack(View view){
+        Intent i = new Intent(ExploreScreen.this, IntentsCallBack.class);
+        startActivityForResult(i,1);
+        startActivity(i);
+    }
+
+    protected  void onActivityResult(int requestCode, int resultCode, Intent data){
+        if(requestCode == 1){
+            if(resultCode == Activity.RESULT_OK){
+                String result = data.getStringExtra("result");
+                Toast.makeText(ExploreScreen.this,"DATA From CallBack Screen = "+result, Toast.LENGTH_LONG).show();
+            }
+            if(resultCode == Activity.RESULT_CANCELED){
+                Toast.makeText(this, "Nothing Returned", Toast.LENGTH_LONG).show();
+            }
+        }
     }
 }
