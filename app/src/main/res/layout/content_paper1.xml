@@ -11,41 +11,53 @@
     <TextView
         android:id="@+id/header"
         android:layout_width="wrap_content"
-        android:layout_height="90dp"
-        android:text="Professional Android 4 Application Development"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="7dp"
+        android:text="Application Development Research Based on Android Platform"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@android:color/background_dark"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="7dp" />
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/by"
-        android:layout_width="46dp"
-        android:layout_height="51dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="178dp"
+        android:layout_marginLeft="178dp"
         android:text="by"
         android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="104dp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/author"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/Reto"
-        android:layout_width="172dp"
-        android:layout_height="49dp"
-        android:text="Reto Meier"
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="100dp"
+        android:text="Intelligent Computation Technology and Automation 2014"
         android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="155dp" />
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/paper1"
-        android:layout_width="172dp"
-        android:layout_height="49dp"
-        android:text="asdddddddddddddddddddddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="34dp"
+        android:text="Android is an open and free operating system based on Linux, which is mainly used for mobile terminals, such as smart phones and panel computer. It is developed by Open Handset Alliance composed of more than 30 technology companies and mobile phone companies. Android tries to allow users experience the best service quality, and allow developers get a more open level for more convenient software developing. Thus mobile applications with more convenient functions can be developed via Android. This paper firstly presents the architecture of Android platform, including the classes and methods in developing. Then we takes audio/video file procurement as an example to introduce the Android program design and development, including classes application, program design, development and analysis."
         android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="258dp" />
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/author" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
