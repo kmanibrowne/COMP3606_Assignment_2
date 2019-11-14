@@ -20,7 +20,7 @@ public class QuizScreen extends AppCompatActivity {
     Button finishAttempt;
     public static String fileName = "testing.txt";
 
-    private static final long START_TIME_IN_MILLIS = 300000;
+    private static final long START_TIME_IN_MILLIS = 150000;
 
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
@@ -36,8 +36,6 @@ public class QuizScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_screen);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

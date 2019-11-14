@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Paper2"
+            android:label="@string/title_activity_paper2"
+            android:parentActivityName=".ExploreScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.comp3606_asg2.ExploreScreen" />
+        </activity>
+        <activity
+            android:name=".Paper1"
+            android:label="@string/title_activity_paper1"
+            android:parentActivityName=".ExploreScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.comp3606_asg2.ExploreScreen" />
+        </activity>
+        <activity
             android:name=".IntentsCallBack"
             android:label="@string/title_activity_intents_call_back"
             android:parentActivityName=".ExploreScreen"

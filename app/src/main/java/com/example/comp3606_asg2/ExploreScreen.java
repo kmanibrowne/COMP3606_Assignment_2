@@ -35,6 +35,16 @@ public class ExploreScreen extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void onClickPaper1(View view){
+        Intent i = new Intent(ExploreScreen.this, Paper1.class);
+        startActivity(i);
+    }
+
+    public void onClickPaper2(View view){
+        Intent i = new Intent(ExploreScreen.this, Paper2.class);
+        startActivity(i);
+    }
+
     public void onClickStartQuiz(View view){
         Intent i = new Intent(ExploreScreen.this, QuizScreen.class);
         startActivity(i);

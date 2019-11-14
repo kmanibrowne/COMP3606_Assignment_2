@@ -59,16 +59,18 @@
         android:id="@+id/paper1_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="320dp"
+        android:onClick="onClickPaper1"
         android:text="Paper 1" />
 
     <Button
         android:id="@+id/paper2_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
         android:layout_marginLeft="300dp"
+        android:layout_marginTop="320dp"
+        android:onClick="onClickPaper2"
         android:text="Paper 2" />
 
     <Button
