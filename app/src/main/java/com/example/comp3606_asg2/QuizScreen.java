@@ -18,7 +18,7 @@ import java.util.Locale;
 public class QuizScreen extends AppCompatActivity {
 
     Button finishAttempt;
-    public static String fileName = "testing.txt";
+    public static String fileName = "high_scores";
 
     private static final long START_TIME_IN_MILLIS = 150000;
 
@@ -69,7 +69,7 @@ public class QuizScreen extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    @Override
+  /*  @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
 
@@ -78,7 +78,7 @@ public class QuizScreen extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
@@ -129,7 +129,7 @@ public class QuizScreen extends AppCompatActivity {
         try{
             FileOutputStream fout = openFileOutput(file, Context.MODE_PRIVATE);
             fout.write(text.getBytes());
-            Toast.makeText(this, "File Saved", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "File Saved", Toast.LENGTH_SHORT).show();
         }
         catch(Exception e){
             e.printStackTrace();

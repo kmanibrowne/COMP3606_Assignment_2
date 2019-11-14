@@ -84,12 +84,13 @@
 
     <ImageButton
         android:id="@+id/start_quiz"
-        android:layout_width="330dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="520dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="470dp"
         android:onClick="onClickStartQuiz"
         app:srcCompat="@drawable/start_quiz" />
 
+    <!--android:layout_marginLeft="40dp"-->
 
 </RelativeLayout>

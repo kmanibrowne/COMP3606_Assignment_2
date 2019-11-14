@@ -2,6 +2,7 @@ package com.example.comp3606_asg2;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -13,7 +14,10 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.Random;
+
 public class ExploreScreen extends AppCompatActivity {
+    int allBackgroundColor = Color.argb(255, 255, 255, 255);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,20 @@ public class ExploreScreen extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        View parentLayout = findViewById(android.R.id.content);
+        Intent intent = getIntent();
+
+        //intent code
+
+        if(intent.hasExtra("INTENTS_CALLBACK_RESULT_DATA")) {
+            int intentCallBackResultData = intent.getIntExtra("INTENTS_CALLBACK_RESULT_DATA", 0);
+            int intentCallBackDataValue0 = intent.getIntExtra("INTENTS_CALLBACK_DATA_0", 0);
+            int intentCallBackDataValue1 = intent.getIntExtra("INTENTS_CALLBACK_DATA_1", 0);
+            if(intentCallBackResultData != 0) {
+                String tsResult = "Calculations from IntentsCallBack screen: (" + intentCallBackDataValue0 + " * " + intentCallBackDataValue1 + ") = " + intentCallBackResultData;
+                Snackbar.make(parentLayout, tsResult, Snackbar.LENGTH_LONG).setAction("Action", null).show();
+            }
+        }
     }
 
     public void onClickIntro(View view){
@@ -52,19 +70,11 @@ public class ExploreScreen extends AppCompatActivity {
 
     public void onClickIntentCallBack(View view){
         Intent i = new Intent(ExploreScreen.this, IntentsCallBack.class);
-        startActivityForResult(i,1);
+        i.putExtra("BACKGROUND_COLOR", allBackgroundColor);
+        i.putExtra("INTENTS_CALLBACK_DATA_0", new Random().nextInt(100));
+        i.putExtra("INTENTS_CALLBACK_DATA_1", new Random().nextInt(100));
         startActivity(i);
     }
 
-    protected  void onActivityResult(int requestCode, int resultCode, Intent data){
-        if(requestCode == 1){
-            if(resultCode == Activity.RESULT_OK){
-                String result = data.getStringExtra("result");
-                Toast.makeText(ExploreScreen.this,"DATA From CallBack Screen = "+result, Toast.LENGTH_LONG).show();
-            }
-            if(resultCode == Activity.RESULT_CANCELED){
-                Toast.makeText(this, "Nothing Returned", Toast.LENGTH_LONG).show();
-            }
-        }
-    }
+
 }
