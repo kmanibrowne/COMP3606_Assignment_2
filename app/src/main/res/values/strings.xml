@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">COMP3606_ASG2</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_explore_screen">ExploreScreen</string>
+    <string name="title_activity_about_android">AboutAndroid</string>
+    <string name="title_activity_android_guicomponents">AndroidGUIComponents</string>
+
+    <string name="What_is_Android">
+        Android is an operating system and programming platform by Google for smartphones and other mobile devices (such as tablets).
+        It can run on many different devices from many different manufacturers. Android includes a software development kit for writing original code and assembling software modules to create apps for Android users. It also provides a marketplace to distribute apps.  All together Android represents an ecosystem for mobile apps. Android is developed by the Open Handset Alliance, which is led by Google. Some of the well-known Android device manufacturers include Acer, HTC, Samsung, LG, Sony Ericsson and Motorola.
+    </string>
+
+    <string name="Toast_faqs">
+        A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity remains visible and interactive. Toasts automatically disappear after a timeout.
+    </string>
+
+    <string name="Spinner_faqs">
+        Spinners provide a quick way to select one value from a set. In the default state, a spinner shows its currently selected value. Touching the spinner displays a dropdown menu with all other available values, from which the user can select a new one.
+    </string>
+
+    <string name="Button_faqs">
+        A button consists of text or an icon (or both text and an icon) that communicates what action occurs when the user touches it.
+    </string>
+
+    <string name="ImageView_faqs">
+        Displays image resources, for example android.graphics.Bitmap or android.graphics.drawable.Drawable resources. ImageView is also commonly used to apply tints to an image and handle image scaling.
+    </string>
+
+    <string name="ListView_faqs">
+        Displays a vertically-scrollable collection of views, where each view is positioned immediately below the previous view in the list. For a more modern, flexible, and performant approach to displaying lists, use RecyclerView.
+    </string>
+
+    <string name="EditText_faqs">
+        A user interface element for entering and modifying text.
+    </string>
+
+    <string name="DatePicker_faqs">
+        Provides a widget for selecting a date.
+    </string>
+
+    <string name="NumberPicker_faqs">
+        A widget that enables the user to select a number from a predefined range. There are two flavors of this widget and which one is presented to the user depends on the current theme.
+    </string>
+    <string name="title_activity_quiz_screen">QuizScreen</string>
+
+    <!--Quiz Questions -->
+
+    <string name="question1">  <!--EditText-->
+        1. What is a user interface element in android for entering and modifying text?
+    </string>
+
+    <string name="question2"> <!--Button-->
+        2. A ______________ consists of text or an icon (or both text and an icon) that communicates what action occurs when the user touches it.
+    </string>
+
+    <string name="question3"> <!--Toast-->
+        3. What provides a simple feedback about an operation in a small popup?
+    </string>
+
+    <string name="question4"> <!--Spinner-->
+        4. What provides a quick way to select one value from a set?
+    </string>
+
+    <string name="question5"> <!--DatePicker-->
+        5. __________ provides a widget for selecting a date.
+    </string>
+</resources>

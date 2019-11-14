@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ExploreScreen"
+    tools:showIn="@layout/activity_explore_screen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="Introduction to Android: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="onClickIntro"
+        app:srcCompat="@drawable/android_facts"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="10dp"
+        android:text="About Androids GUI Components: "/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="130dp"
+        android:onClick="onClickGUIComponents"
+        app:srcCompat="@drawable/android_gui" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Select Paper 1 or Paper 2 which  provides a short summary of a research paper relevant to Android development by two different authors point of view."/>
+
+    <Button
+        android:id="@+id/paper1_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="10dp"
+        android:text="Paper 1" />
+
+    <Button
+        android:id="@+id/paper2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="300dp"
+        android:text="Paper 2" />
+
+    <Button
+        android:id="@+id/intent_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="130dp"
+        android:text="Intents CallBack" />
+
+    <ImageButton
+        android:id="@+id/start_quiz"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="520dp"
+        android:onClick="onClickStartQuiz"
+        app:srcCompat="@drawable/start_quiz" />
+
+
+</RelativeLayout>

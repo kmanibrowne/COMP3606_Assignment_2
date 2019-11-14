@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".QuizScreen"
+    tools:showIn="@layout/activity_quiz_screen">
+
+
+    <TextView
+        android:id="@+id/textView_Q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/question1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <EditText
+        android:id="@+id/editText_q1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView_q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/question2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <EditText
+        android:id="@+id/editText_q2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView_q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/question3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <EditText
+        android:id="@+id/editText_q3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="245dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView_q4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/question4"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+
+    <EditText
+        android:id="@+id/editText_q4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/textView_q5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/question5"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <EditText
+        android:id="@+id/editText_q5"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="470dp"
+        android:onClick="findScore"
+        android:text="Finish Attempt" />
+
+    <TextView
+        android:id="@+id/prev_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="10dp"
+        android:text="Previous Score: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <EditText
+        android:id="@+id/editText_prev_score"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="110dp"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="210dp"
+        android:text="Your Score: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <EditText
+        android:id="@+id/editText_score"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="280dp"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+
+</RelativeLayout>
