@@ -2,28 +2,25 @@ package com.example.comp3606_asg2;
 
 import android.content.Context;
 import android.os.Bundle;
-
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.os.CountDownTimer;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Locale;
 
 public class QuizScreen extends AppCompatActivity {
 
-    private Button finishAttempt;
+    Button finishAttempt;
     public static String fileName = "testing.txt";
 
-    private static final long START_TIME_IN_MILLIS = 600000;
+    private static final long START_TIME_IN_MILLIS = 300000;
 
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
@@ -39,9 +36,12 @@ public class QuizScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_screen);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        finishAttempt = (Button)findViewById(R.id.submit);
         mTextViewCountDown = findViewById(R.id.text_view_countdown);
 
         mButtonStartPause = findViewById(R.id.button_start_pause);
@@ -58,6 +58,7 @@ public class QuizScreen extends AppCompatActivity {
             }
         });
 
+
         mButtonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,7 +68,18 @@ public class QuizScreen extends AppCompatActivity {
 
         updateCountDownText();
 
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+
+        if( id == android.R.id.home){
+            this.finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     private void startTimer() {
@@ -211,6 +223,7 @@ public class QuizScreen extends AppCompatActivity {
             ReadFromFile(fileName);
             calculateScore();
         }
+
     }
 
 
